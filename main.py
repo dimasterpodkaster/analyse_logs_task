@@ -11,13 +11,13 @@ def main():
 
     args = parser.parse_args()
 
+    if args.report != "handlers":
+        print(f"Неизвестный отчет: {args.report}")
+        return
+
     missing_files = [file for file in args.log_files if not os.path.exists(file)]
     if missing_files:
         print("Недостающие файлы:", ", ".join(missing_files))
-        return
-
-    if args.report != "handlers":
-        print(f"Неизвестный отчет: {args.report}")
         return
 
     all_data = []
