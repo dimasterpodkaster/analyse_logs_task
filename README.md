@@ -1,7 +1,6 @@
 # Analyse Logs Task
 
-CLI-приложение для анализа логов Django-приложений и генерации отчётов.  
-Создано как решение тестового задания на позицию Python Junior.
+CLI-приложение для анализа логов Django-приложений и генерации отчётов.
 
 ---
 
@@ -52,7 +51,7 @@ HANDLER                DEBUG   INFO    WARNING ERROR   CRITICAL
 
 Проект покрыт тестами на `pytest`.
 
-Запуск тестов:
+Установка зависимостей:
 
 ```bash
 pip install -r requirements.txt
